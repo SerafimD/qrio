@@ -30,7 +30,7 @@ module Qrio
         matrix.height,
         ChunkyPNG::Color::WHITE
       )
-
+=begin
       (0..(matrix.width - 1)).to_a.each do |x|
         (0..(matrix.height - 1)).to_a.each do |y|
           png[x, y] = ChunkyPNG::Color::BLACK if matrix[x, y]
@@ -38,7 +38,7 @@ module Qrio
       end
 
       png = extract_options(png, options)
-
+=end
       png = png.crop(*@qr_bounds.to_point_size) if options[:crop]
       png.save(filename, :fast_rgba)
     end
