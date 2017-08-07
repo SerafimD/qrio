@@ -33,6 +33,7 @@ module Qrio
   
       instance.filter_candidates
       instance.find_intersections
+      instance.set_qr_bounds
 
       instance.build_normalized_qr
       instance.find_alignment_pattern
