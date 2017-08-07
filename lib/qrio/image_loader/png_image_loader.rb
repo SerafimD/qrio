@@ -7,7 +7,7 @@ module Qrio
         bits = image.pixels.map do |pixel|
           grayscale = ChunkyPNG::Color.to_grayscale(pixel)
           level = ChunkyPNG::Color.r(grayscale)
-          level <= 126
+          level <= 512
         end
 
         Matrix.new(bits, image.width, image.height)
