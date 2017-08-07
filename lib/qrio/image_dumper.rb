@@ -36,9 +36,9 @@ module Qrio
           png[x, y] = ChunkyPNG::Color::BLACK if matrix[x, y]
         end
       end
-
-      png = extract_options(png, options)
 =end
+      png = extract_options(png, options)
+
       png = png.crop(*@qr_bounds.to_point_size) if options[:crop]
       png.save(filename, :fast_rgba)
     end
