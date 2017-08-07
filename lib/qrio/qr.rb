@@ -8,14 +8,14 @@ module Qrio
     end
 
     def self.load(filename)
-      instance = new
-      instance.load_image(filename)
+      #instance = new
+      #instance.load_image(filename)
 
-      instance.scan(:horizontal)
-      instance.scan(:vertical)
+      #instance.scan(:horizontal)
+      #instance.scan(:vertical)
 
-      instance.filter_candidates
-      instance.find_intersections
+      #instance.filter_candidates
+      #instance.find_intersections
       #instance.set_qr_bounds
 
       #instance.build_normalized_qr
